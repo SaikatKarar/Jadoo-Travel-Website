@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jadoo</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -22,14 +24,54 @@
         - #HEADER
      -->
     <header class="header" data-header>
-        <div class="contaiiner">
+        <div class="container">
+
             <a href="#" class="logo">
-                <img src="./assets/images/logo.png" width="180" height="38" alt="">
+                <img src="./assets/images/logo.png" width="187" height="38" alt="">
             </a>
 
-            <nav class="navber" data-navbar>
+            <nav class="navbar" data-navbar>
 
+                <div class="navbar-top">
+                    <a href="#" class="logo">
+                        <img src="./assets/images/logo.png" width="187" height="38" alt="">
+                    </a>
+
+                    <button class="nav-toggle-btn" aria-label="close menu" data-nav-toggler>
+                        <i class="ri-close-line" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="" class="navbar-link">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="navbar-link">About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="navbar-link">Services</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="navbar-link">Pricing</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="navbar-link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="header-action">
+                    <a href="#" class="login-btn">Login</a>
+
+                    <a href="#" class="btn btn-primary">Sign Up</a>
+                </div>
             </nav>
+
+            <button class="nav-toggle-btn" aria-label="open menu" data-nav-toggler>
+                <i class="ri-menu-3-line"></i>
+            </button>
+
+            <div class="overlay" data-overlay data-nav-toggler></div>
         </div>
     </header>
 
